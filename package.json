@@ -1,0 +1,42 @@
+{
+  "name": "cpe-connectivity-test-raspberry-pi",
+  "description": "CPE connectivity test using AWS IoT Node.js SDK",
+  "version": "1.0.0",
+  "homepage": "https://github.com/guo-yuan/cpe-conn-test-agent",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/guo-yuan/cpe-conn-test-agent"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "aws",
+    "iot",
+    "mqtt"
+  ],
+  "dependencies": {
+    "aws-iot-device-sdk": "2.2.1",
+    "log-timestamp": "0.3.0",
+    "net-ping": "1.2.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-mocha": "^3.0.1",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.2.1",
+    "gulp-coverage": "^0.3.38",
+    "gulp-beautify": "^2.0.0",
+    "sinon": "^1.17.3",
+    "rewire": "^2.5.1"
+  },
+  "scripts": {
+    "test": "node ./node_modules/gulp/bin/gulp.js test --verbose",
+    "beautify": "node ./node_modules/gulp/bin/gulp.js beautify"
+  }
+}
